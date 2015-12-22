@@ -1,0 +1,139 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
+}
+
+body {
+    background: #333;    
+}
+
+.sidebar {
+    background: #EEE;
+}
+.header {
+    text-align: center;
+}
+#title {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+#tagline {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.nav-list {
+    margin: 1em 0 0.5em 0;
+    padding: 0;
+    text-align: center;
+}
+.nav-item {
+    display: inline;
+    width: 10em;
+}
+.nav-item input {
+    width: 2.5em;
+    margin-bottom: 0.5em;
+    -moz-appearance: textfield;
+}
+.button-flag {
+    color: #FFF;
+    background-color: #08F;
+}
+.button-reset {
+    color: #FFF;
+    background-color: #D00;
+}
+
+#grid {
+    text-align: center;
+    white-space: nowrap;
+}
+.cell {
+    background: #EEE;
+    font-size: 1.2em;
+    width: 1.4em;
+    height: 1.4em;
+    text-align: center;
+    vertical-align: bottom;
+    border: 1px solid black;
+}
+.cell:hover {
+    background: #CCC;
+    border-color: #333;
+}
+.cell:active {
+    background: #AAA;
+}
+.cell:focus {
+    outline: none;
+}
+
+#instructions {
+    color: #CCC;
+}
+#instructions h2 {
+    margin-left: 0.5em;
+}
+#credits {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 2em;
+    color: #777;
+}
+#credits a {
+    color: #75a19c;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        border-right: 2px solid #999;
+    }
+    .header {
+        margin: 3em 2em 0 0.5em;
+        text-align: right;
+    }
+    .nav-item {
+        float: right;
+        clear: right;
+        text-align: right;
+        width: 10em;
+        margin: 0 2em 1em;
+    }
+    .nav-item input {
+        width: 2.5em;
+        margin-bottom: 0;
+    }
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+    #grid {
+        text-align: left;
+    }
+    .cell {
+        font-size: 1.4em;
+        width: 1.6em;
+        height: 1.6em;
+    }
+    #instructions h2 {
+        margin-left: 0;
+    }
+    #credits {
+        text-align: left;
+    }
+}
