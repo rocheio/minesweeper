@@ -63,8 +63,8 @@ body {
 .cell {
     background: #EEE;
     font-size: 1.2em;
-    width: 1.4em;
-    height: 1.4em;
+    width: 30px;
+    height: 30px;
     text-align: center;
     vertical-align: bottom;
     border: 1px solid black;
@@ -127,8 +127,8 @@ body {
     }
     .cell {
         font-size: 1.4em;
-        width: 1.6em;
-        height: 1.6em;
+        width: 40px;
+        height: 40px;
     }
     #instructions h2 {
         margin-left: 0;
