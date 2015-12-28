@@ -322,7 +322,7 @@ var game = {
             $('flag').style.backgroundColor = '#08F';
         } else {
             game.flagMode = true;
-            $('flag').style.backgroundColor = '#06D';
+            $('flag').style.backgroundColor = '#05C';
         }
     },
 };
