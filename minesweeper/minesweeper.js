@@ -8,8 +8,8 @@ var game = {
     remaining: 0,
     revealed: 0,
     maxreveals: 0,
-    flag: '&#9873;',
-    mine: '&#9728;',
+    flag: '&#9873;&#65038;',
+    mine: '&#9728;&#65038;',
     flagMode: false,
 
     start: function () {
@@ -211,7 +211,7 @@ var game = {
 
     is_flag: function (id) {
         var cellvalue = $(id).innerHTML.charCodeAt(0).toString(),
-            flagvalue = game.flag.replace('&#','').replace(';','');
+            flagvalue = game.flag.replace(';','').split('&#')[1];
         if (cellvalue === flagvalue) {
             return true;
         }
